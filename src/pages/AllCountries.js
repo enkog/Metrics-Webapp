@@ -1,7 +1,11 @@
 import Countries from '../components/Countries';
+import Header from '../components/Header';
 
 const AllCountries = () => (
-  <Countries />
+  <div>
+    <Header content="Countries" />
+    <Countries />
+  </div>
 );
 
 export default AllCountries;

@@ -21,6 +21,7 @@ a {
 .row :nth-child(even){
   background-color: #3E61A4;
 }
+
 .row :nth-child(odd){
   background-color: #4268AF;
 }

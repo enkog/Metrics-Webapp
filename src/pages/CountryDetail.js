@@ -1,4 +1,9 @@
+import Header from '../components/Header';
+
 const CountryDetail = () => (
-  <h1>Country detail</h1>
+  <div>
+    <Header content="Country Details" />
+    <h1>Country details</h1>
+  </div>
 );
 export default CountryDetail;
