@@ -17,7 +17,6 @@ const countriesSlice = createSlice({
     },
     [fetchCountries.fulfilled]: (state, action) => {
       state.countries = action.payload;
-      // console.log(state.countries);
       state.loading = false;
     },
     [fetchCountries.rejected]: (state) => {

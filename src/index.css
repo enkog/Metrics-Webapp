@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: #fff;
-  background-color: #252525;
 }
 
 a {
@@ -16,12 +15,35 @@ a {
 .navbar {
   background: #3F62A6;
   color: #fff;
+  height: 10vh;
 }
 
-.row :nth-child(even){
-  background-color: #3E61A4;
+.card {
+  background: none !important;
 }
 
-.row :nth-child(odd){
-  background-color: #4268AF;
+.card-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0;
+  background: #3F62A4;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  height: 90px;
+  width: 90px;
+}
+
+.card-group>.card {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  height: 250px;
+  padding: 15px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

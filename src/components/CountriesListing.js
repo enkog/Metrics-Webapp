@@ -1,14 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, Row, Col } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { fetchCountries } from '../store/countriesSlice';
 
-const CountryListing = () => {
+const CountriesListing = () => {
   const countriesData = useSelector((state) => state.countries);
-
-  if (countriesData.length !== 0) {
-    countriesData.countries.map((country) => console.log(country));
-  }
+  const items = countriesData.countries;
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -16,23 +12,23 @@ const CountryListing = () => {
   }, []);
 
   return (
-    <Row>
-      <Col>
-        <Card>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col>
-        <Card>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
+    <div className="countries">
+      <div className="card-group g-0">
+        {items.map(({
+          idx, name, flags, region,
+        }) => (
+          <div className="card" key={idx}>
+            <div className="d-flex justify-content-center align-items-center"><img src={flags.png} className="card-img-top" alt="..." /></div>
+            <div className="card-body">
+              <h5 className="card-title fs-6 text-center fw-bold text-uppercase">{name.common}</h5>
+              <p className="card-text">{region}</p>
+            </div>
+          </div>
+
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default CountryListing;
+export default CountriesListing;
