@@ -1,10 +1,10 @@
-import Countries from '../components/Countries';
+import CountriesListing from '../components/CountriesListing';
 import Header from '../components/Header';
 
 const AllCountries = () => (
   <div>
     <Header content="Countries" />
-    <Countries />
+    <CountriesListing />
   </div>
 );
 
