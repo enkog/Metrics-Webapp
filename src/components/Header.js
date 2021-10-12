@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
 
 const Header = (props) => {
-  const { content } = props;
+  const { content, search } = props;
   return (
     <>
       <Navbar>
@@ -12,6 +12,7 @@ const Header = (props) => {
           <FaAngleLeft />
           {' '}
           {content}
+          {search}
         </NavLink>
         <Nav className="ms-auto">
           <NavLink to="" className="text-white"><FaMicrophone /></NavLink>
@@ -24,6 +25,7 @@ const Header = (props) => {
 
 Header.propTypes = {
   content: PropTypes.string.isRequired,
+  search: PropTypes.element.isRequired,
 };
 
 export default Header;

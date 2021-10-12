@@ -19,7 +19,9 @@ const CountriesListing = () => {
           idx, name, flags, region, languages, population,
         }) => (
           <div className="card" key={idx}>
-            <div className="d-flex justify-content-center align-items-center"><img src={flags.png} className="card-img-top" alt="..." /></div>
+            <div className="d-flex justify-content-center align-items-center">
+              <img src={flags.png} className="card-img-top" alt="..." />
+            </div>
             <div className="card-body">
               <div>
                 <p className="card-title fw-bold">{name}</p>
