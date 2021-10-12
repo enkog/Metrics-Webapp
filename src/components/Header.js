@@ -7,12 +7,10 @@ import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
 const Header = (props) => (
   <>
     <Navbar>
-      <NavLink to="/">
-        <Navbar.Brand href="#home" className="d-flex align-items-center text-white ps-2 w-100">
-          <FaAngleLeft />
-          {' '}
-          {props.content}
-        </Navbar.Brand>
+      <NavLink to="/" className="d-flex align-items-center text-white ps-2 w-100">
+        <FaAngleLeft />
+        {' '}
+        {props.content}
       </NavLink>
       <Nav className="ms-auto">
         <NavLink to="" className="text-white"><FaMicrophone /></NavLink>
