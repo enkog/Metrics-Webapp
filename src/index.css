@@ -22,6 +22,9 @@ a {
   background: none !important;
 }
 
+.card p {
+  margin: 0;
+}
 .card-group {
   display: grid;
   grid-template-columns: auto auto;
@@ -30,20 +33,22 @@ a {
 }
 
 .card-img, .card-img-bottom, .card-img-top {
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  width: 100%;
 }
 
 .card-group>.card {
   margin: 0 !important;
   border-radius: 0 !important;
-  height: 250px;
-  padding: 15px;
+  height: 300px;
 }
 
 .card-body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  margin-top: 5px;
+}
+
+.region {
+  font-size: 12px;
 }
