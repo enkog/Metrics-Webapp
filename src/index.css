@@ -14,7 +14,7 @@ a {
 }
 
 .navbar {
-  background: #3f62a6;
+  background: #D04278;
   color: #fff;
   height: 10vh;
 }
@@ -31,7 +31,7 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0;
-  background: #3f62a4;
+  background: #D04278;
 }
 
 .card-img,
@@ -45,6 +45,10 @@ a {
   margin: 0 !important;
   border-radius: 0 !important;
   height: 300px;
+}
+
+.card:nth-child(even) {
+  background: red;
 }
 
 .card-body {
@@ -68,4 +72,30 @@ a {
   border-radius: 3px;
   width: 150px;
   font-size: 14px;
+}
+
+.list-group-item {
+  padding: 20px;
+  border-radius: 0 !important;
+  color: #fff;
+}
+
+.list-group-item p {
+  margin-bottom: 0 !important;
+}
+
+.list-group-item:nth-child(even) {
+  background: #D04278; 
+}
+
+.list-group-item:nth-child(odd) {
+  background: #E24885; 
+}
+
+.details img {
+  height: 250px;
+}
+
+.details-img {
+  background: #E24885; 
 }

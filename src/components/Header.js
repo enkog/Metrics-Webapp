@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
@@ -25,7 +26,6 @@ const Header = (props) => {
 
 Header.propTypes = {
   content: PropTypes.string.isRequired,
-  search: PropTypes.element.isRequired,
 };
 
 export default Header;
