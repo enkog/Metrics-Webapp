@@ -13,9 +13,11 @@ const Header = (props) => {
           <FaAngleLeft />
           {' '}
           {content}
-          {search}
+
         </NavLink>
+
         <Nav className="ms-auto">
+          {search}
           <NavLink to="" className="text-white"><FaMicrophone /></NavLink>
           <NavLink to="" className="text-white ps-3 pe-2"><FaCog /></NavLink>
         </Nav>
