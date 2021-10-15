@@ -36,6 +36,13 @@ npm install
 npm start
 ```
 
+### Run Tests
+
+```
+npm test
+
+```
+
 ## Author
 
 Feel free to reach out. I'm always happy to connect :slightly_smiling_face:

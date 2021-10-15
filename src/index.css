@@ -14,7 +14,7 @@ a {
 }
 
 .navbar {
-  background: #D04278;
+  background: #d04278;
   color: #fff;
   height: 10vh;
 }
@@ -31,7 +31,7 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0;
-  background: #D04278;
+  background: #d04278;
 }
 
 .card-img,
@@ -85,11 +85,11 @@ a {
 }
 
 .list-group-item:nth-child(even) {
-  background: #D04278; 
+  background: #d04278;
 }
 
 .list-group-item:nth-child(odd) {
-  background: #E24885; 
+  background: #e24885;
 }
 
 .details img {
@@ -97,5 +97,5 @@ a {
 }
 
 .details-img {
-  background: #E24885; 
+  background: #e24885;
 }
