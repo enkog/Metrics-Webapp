@@ -27,11 +27,13 @@ const CountryDetail = () => {
       currencies += details[key][0].name;
     }
   });
+
   useEffect(() => {
     if (name && name !== '') {
       fetchCountryDetail();
     }
   }, [name]);
+
   return (
     <div>
       <Header content="Country Details" />
@@ -39,7 +41,6 @@ const CountryDetail = () => {
         <div className="details-img w-100 d-flex justify-content-center align-items-center">
           <Image src={details.flag} fluid />
         </div>
-
         <ListGroup>
           <ListGroup.Item className="text-center text-uppercase fw-bolder fs-3">
             <p>{details.name}</p>
