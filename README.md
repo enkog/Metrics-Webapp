@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Metrics-Webapp
-This project is a mobile web application to check a list of metrics (numeric values) I is created using React and Redux.
+This project is a mobile web application to check a list of metrics (numeric values). It is created using React and Redux.
 
 The 'REST countries' API is used to provide numeric data about countries. The webapp has several pages:
 
@@ -16,6 +16,7 @@ The 'REST countries' API is used to provide numeric data about countries. The we
 
 ## Live Demo
 
+[Metrics Webapp]()
 ## Getting Started
 
 ### Setup
@@ -23,7 +24,7 @@ The 'REST countries' API is used to provide numeric data about countries. The we
 Clone the project:
 
 ```
-git clone https://github.com/enkog/Bookstore.git
+git clone https://github.com/enkog/Metrics-Webapp.git
 ```
 
 ### Run project

@@ -16,6 +16,17 @@ const CountryDetail = () => {
     dispatch(detailsSliceAction.selectedCountry(res.data[0]));
   };
 
+  let languages = '';
+  let currencies = '';
+
+  Object.keys(details).forEach((key) => {
+    if (key === 'languages') {
+      languages += details[key][0].name;
+    }
+    if (key === 'currencies') {
+      currencies += details[key][0].name;
+    }
+  });
   useEffect(() => {
     if (name && name !== '') {
       fetchCountryDetail();
@@ -56,6 +67,18 @@ const CountryDetail = () => {
           <ListGroup.Item className="d-flex justify-content-between align-items-center">
             <p>Subregion</p>
             <p>{details.subregion}</p>
+          </ListGroup.Item>
+          <ListGroup.Item className="d-flex justify-content-between align-items-center">
+            <p>Language</p>
+            <p>{languages}</p>
+          </ListGroup.Item>
+          <ListGroup.Item className="d-flex justify-content-between align-items-center">
+            <p>Currency</p>
+            <p>{currencies}</p>
+          </ListGroup.Item>
+          <ListGroup.Item className="d-flex justify-content-between align-items-center">
+            <p>Timezone</p>
+            <p>{details.timezones}</p>
           </ListGroup.Item>
         </ListGroup>
       </div>
