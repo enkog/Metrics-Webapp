@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { ListGroup, Image } from 'react-bootstrap';
 import axios from 'axios';
-import { detailsSliceAction } from '../store/detailsSlice';
+import { detailsSliceAction } from '../redux/detailsSlice';
 
 const CountryDetail = () => {
   const details = useSelector((state) => state.details);

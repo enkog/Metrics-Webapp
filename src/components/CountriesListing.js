@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchCountries } from '../store/countriesSlice';
+import { fetchCountries } from '../redux/countriesSlice';
 import Header from './Header';
 
 const CountriesListing = () => {
