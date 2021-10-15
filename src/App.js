@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router, Switch, Route, Redirect,
 } from 'react-router-dom';
 import CountriesListing from './components/CountriesListing';
-import CountryDetail from './components/CountryDetail';
+import CountryDetail from './components/CountryDetail'
 
 function App() {
   return (
