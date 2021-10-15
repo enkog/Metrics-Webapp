@@ -17,6 +17,11 @@ The 'REST countries' API is used to provide numeric data about countries. The we
 ## Live Demo
 
 [Metrics Webapp](https://metrics-webapp.herokuapp.com/countries)
+
+## Video
+
+[Metrics Webapp](https://drive.google.com/file/d/1hwoMFe2K4JU15yOrRTv4OGDdJ9qs3ZYT/view?usp=sharing)
+
 ## Getting Started
 
 ### Setup
