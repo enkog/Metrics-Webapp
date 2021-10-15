@@ -25,9 +25,17 @@ const CountriesListing = () => {
       if (country.region.toLowerCase().includes(input.toLowerCase())) {
         setOutput((output) => [...output, country]);
       }
+
       return output;
     });
   }, [input]);
+
+  if (output.length === 0) {
+    items.filter((country) => {
+      setOutput((output) => [...output, country]);
+      return output;
+    });
+  }
 
   const list = <input type="text" onChange={(e) => setInput(e.target.value)} className=" input-field mx-1" placeholder="Search by regions" />;
   return (
