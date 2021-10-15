@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
+import { FaAngleLeft } from 'react-icons/fa';
 
 const Header = (props) => {
   const { content, search } = props;
@@ -13,13 +13,9 @@ const Header = (props) => {
           <FaAngleLeft />
           {' '}
           {content}
-
         </NavLink>
-
         <Nav className="ms-auto">
           {search}
-          <NavLink to="" className="text-white"><FaMicrophone /></NavLink>
-          <NavLink to="" className="text-white ps-3 pe-2"><FaCog /></NavLink>
         </Nav>
       </Navbar>
     </>

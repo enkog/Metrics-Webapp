@@ -1,11 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchCountries } from '../redux/countriesSlice';
 import Header from './Header';
 
 const CountriesListing = () => {
   const countriesData = useSelector((state) => state.countries);
+  const [input, setInput] = useState('');
+  const [output, setOutput] = useState([]);
 
   const items = countriesData.countries;
 
@@ -14,18 +16,12 @@ const CountriesListing = () => {
     dispatch(fetchCountries());
   }, []);
 
-  const [input, setInput] = useState('');
-  const [output, setOutput] = useState([]);
-
-  console.log(output);
-
   useEffect(() => {
     setOutput([]);
     items.filter((country) => {
       if (country.region.toLowerCase().includes(input.toLowerCase())) {
         setOutput((output) => [...output, country]);
       }
-
       return output;
     });
   }, [input]);
