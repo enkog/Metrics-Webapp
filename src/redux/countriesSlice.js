@@ -12,9 +12,7 @@ const countriesSlice = createSlice({
   initialState: [],
   reducers: {},
   extraReducers: {
-    [fetchCountries.fulfilled]: (_state, action) => {
-     return action.payload;
-    },
+    [fetchCountries.fulfilled]: (_state, action) => action.payload
   },
 });
 
