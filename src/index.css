@@ -19,10 +19,6 @@ a {
   height: 10vh;
 }
 
-.card {
-  background: none !important;
-}
-
 .card p {
   margin: 0;
 }
@@ -31,7 +27,6 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0;
-  background: #d04278;
 }
 
 .card-img,
@@ -45,10 +40,7 @@ a {
   margin: 0 !important;
   border-radius: 0 !important;
   height: 300px;
-}
-
-.card:nth-child(even) {
-  background: red;
+  background: #d04278;
 }
 
 .card-body {
