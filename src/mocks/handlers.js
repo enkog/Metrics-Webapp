@@ -169,7 +169,7 @@ const handlers = [
   rest.get('https://restcountries.com/v2/all', (req, res, ctx) => res(
     ctx.delay(150),
     ctx.status(200),
-    ctx.json({ countries }),
+    ctx.json( countries ),
   )),
   rest.get('https://restcountries.com/v2/name/Algeria', (req, res, ctx) => res(
     ctx.delay(150),

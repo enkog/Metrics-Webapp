@@ -23,6 +23,7 @@ const Header = (props) => {
 
 Header.propTypes = {
   content: PropTypes.string.isRequired,
+  search: PropTypes.object,
 };
 
 export default Header;

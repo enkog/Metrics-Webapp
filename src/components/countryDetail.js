@@ -32,7 +32,7 @@ const CountryDetail = () => {
     if (name && name !== '') {
       fetchCountryDetail();
     }
-  }, [name]);
+  }, [name, fetchCountryDetail]);
 
   return (
     <div>

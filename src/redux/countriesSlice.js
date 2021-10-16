@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -8,18 +9,11 @@ export const fetchCountries = createAsyncThunk('countries/fetchCountries', async
 
 const countriesSlice = createSlice({
   name: 'countries',
-  initialState: { countries: [], loading: false },
+  initialState: [],
   reducers: {},
   extraReducers: {
-    [fetchCountries.pending]: (state) => {
-      state.loading = true;
-    },
-    [fetchCountries.fulfilled]: (state, action) => {
-      state.countries = action.payload;
-      state.loading = false;
-    },
-    [fetchCountries.rejected]: (state) => {
-      state.loading = false;
+    [fetchCountries.fulfilled]: (_state, action) => {
+     return action.payload;
     },
   },
 });

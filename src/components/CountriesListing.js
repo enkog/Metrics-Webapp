@@ -5,20 +5,20 @@ import { fetchCountries } from '../redux/countriesSlice';
 import Header from './Header';
 
 const CountriesListing = () => {
-  const countriesData = useSelector((state) => state.countries);
+  const countriesState = useSelector((state) => state.countries);
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
-
-  const items = countriesData.countries;
 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCountries());
   }, []);
 
+  const countriesData = countriesState.countries ? countriesState.countries : countriesState;
+
   useEffect(() => {
     setOutput([]);
-    items.filter((country) => {
+    countriesData.filter((country) => {
       if (country.region.toLowerCase().includes(input.toLowerCase())) {
         setOutput((output) => [...output, country]);
       }
@@ -27,7 +27,7 @@ const CountriesListing = () => {
   }, [input]);
 
   if (output.length === 0) {
-    items.filter((country) => {
+    countriesData.filter((country) => {
       setOutput((output) => [...output, country]);
       return output;
     });
