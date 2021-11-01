@@ -1,24 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Metrics-Webapp
-This project is a mobile web application to check a list of metrics (numeric values). It is created using React and Redux.
+This project is a mobile web application that shows a list of all countries in the globe, together with their associated information.
 
-The 'REST countries' API is used to provide numeric data about countries. The webapp has several pages:
-
-- The home page contains a list of items that could be filtered by some parameters.
-- The details page displays an item's details when that particular item is clicked.
+The webapp is divided into two sections: 
+- The home page displays a list of countries that may be filtered by area.
+- The details page offers information about a country.
 
 ## Built With
-- JS
+- JSX
 - CSS
 - React
-- Redux
+- Redux Toolkit
+
+## API
+To offer details about each country, the [REST countries API](https://restcountries.com/) was used.
 
 ## Live Demo
 
 [Metrics Webapp](https://metrics-webapp.herokuapp.com/countries)
 
-## Video
+## Video Presentation
 
 [Metrics Webapp](https://drive.google.com/file/d/1hwoMFe2K4JU15yOrRTv4OGDdJ9qs3ZYT/view?usp=sharing)
 
