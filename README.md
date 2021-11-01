@@ -7,7 +7,7 @@ The webapp is divided into two sections:
 - The home page displays a list of countries that may be filtered by area.
 - The details page offers information about a country.
 
-![image](https://raw.githubusercontent.com/enkog/Metrics-Webapp/main/src/assets/screenshot.png)
+![image](./src/assets/screenshot.png)
 ## Built With
 - JSX
 - CSS
