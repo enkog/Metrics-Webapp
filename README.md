@@ -7,6 +7,7 @@ The webapp is divided into two sections:
 - The home page displays a list of countries that may be filtered by area.
 - The details page offers information about a country.
 
+![image]()
 ## Built With
 - JSX
 - CSS
